@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="purple_200">#34AF00</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="green">#34AF00</color>
+    <color name="bottom_nav_item">#283747</color>
+    <color name="bottom_nav_selected_item">#283747</color>
+
+
+    <color name="light_blue">#DBEEFC</color>
+    <color name="indigo_900">#1E1F49</color>
+    <color name="brown_50">#E9E5DE</color>
+    <color name="blue_400">#45A7F2</color>
+    <color name="grey_50">#F8F8F8</color>
+    <color name="light_blue_100">#EDF6FD</color>
+    <color name="brown_100">#CDC9C4</color>
+    <color name="blue_grey_400">#858D91</color>
+    <color name="blue_grey_400_alpha_30">#4D858D91</color>
+    <color name="blue_50">#EDF6FD</color>
+    <color name="black_50">#111111</color>
+    <color name="grey_black">#212529</color>
+    <color name="blue_grey_300">#99ACB7</color>
+
+    <color name="grey_400">#C4C4C4</color>
+
+    <color name="orange_a700">#FA5C01</color>
+    <color name="teal_400">#1A23957D</color>
+    <color name="blue_grey_100">#D7E4EB</color>
+    <color name="blue_grey_900">#0F1828</color>
+    <color name="grey_500">#8E8D8D</color>
+    <color name="orange_a200">#F29845</color>
+    <color name="smart_tea_primaryColor">#234F1E</color>
+    <color name="smart_tea_secondaryColor">#EFFDEE</color>
+    <color name="smart_tea_secondaryColor1">#1A234F1E</color>
+    <color name="smart_tea_bottomColor">#33234F1E</color>
+    <color name="smart_tea_iconColor">#C0CFB2</color>
+</resources>
