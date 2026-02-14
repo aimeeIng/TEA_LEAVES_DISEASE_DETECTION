@@ -11,100 +11,118 @@
 <!--    -->
 <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
 
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/st1"> <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="24dp">
+    android:layout_height="match_parent">
 
     <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/icon" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bck_1"
+        android:scaleType="centerCrop"
+        android:alpha="0.3" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TeaGuard Admin"
-        android:textColor="@color/white"
-        android:textSize="32sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cooperative Management Portal"
-        android:textColor="#00FF00"
-        android:textSize="14sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/glass_card"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/icon" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cooperative Email or ID"
-            android:textColor="@color/white" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:background="@drawable/dark_input_field"
-            android:hint="coop-admin-01"
-            android:textColorHint="#55FFFFFF"
-            android:drawableStart="@drawable/ic_person"
-            android:drawablePadding="10dp"
-            android:padding="10dp" />
+            android:text="TeaGuard Admin"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Password"
-            android:textColor="@color/white" />
+            android:text="Cooperative Management Portal"
+            android:textColor="#00FF00"
+            android:textSize="14sp" />
 
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:background="@drawable/dark_input_field"
-            android:hint="••••••••"
-            android:inputType="textPassword"
-            android:drawableStart="@drawable/ic_lock"
-            android:drawablePadding="10dp"
-            android:padding="10dp" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/glass_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cooperative Email or ID"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etAdminEmail"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/dark_input_field"
+                android:hint="coop-admin-01"
+                android:textColorHint="#55FFFFFF"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:padding="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Password"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etAdminPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/dark_input_field"
+                android:hint="••••••••"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="10dp"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnAdminSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#00FF00"
+                android:text="Sign In ➔"
+                android:textColor="#1B3F1B"
+                android:textStyle="bold" />
+        </LinearLayout>
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="25dp"
-            android:backgroundTint="#00FF00"
-            android:text="Sign In ➔"
-            android:textColor="#1B3F1B"
-            android:textStyle="bold" />
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Request Admin Access"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_check"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp" />
+
     </LinearLayout>
-
-    <Button
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Request Admin Access"
-        android:textColor="@color/white"
-        app:icon="@drawable/ic_check"
-        app:strokeColor="@color/white"
-        app:strokeWidth="1dp" />
-
-</LinearLayout>
-</RelativeLayout>
+</FrameLayout>
